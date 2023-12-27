@@ -17,3 +17,16 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('', function () {
+    echo 'test';
+
+    $bacon = 'teste';
+
+    $bacon = 123;
+
+    echo $bacon;
+
+
+    return response()->json([$bacon]);
+});
